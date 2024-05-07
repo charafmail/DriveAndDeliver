@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: DriveAndDeliver
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:deliver-db
+    username: admin
+    password: admin
+
+server:
+  port: 8082
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
